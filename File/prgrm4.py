@@ -1,0 +1,8 @@
+file1=input("enter the file name to be read from : ")
+file2=input("enter the file name to be appended to : ")
+fin=open(file1,"r")
+content=fin.read()
+fin.close()
+fout=open(file2,"a")
+fout.write(content)
+fout.close()
